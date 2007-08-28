@@ -65,7 +65,6 @@ Icon=%{name}
 Terminal=false
 Type=Application
 Categories=X-MandrivaLinux-MoreApplications-Games-Sports;Game;SportsGame;
-Encoding=UTF-8
 EOF
 
 %{__install} -m644 %{SOURCE11} -D $RPM_BUILD_ROOT%{_miconsdir}/%{name}.png
