@@ -20,7 +20,6 @@ Patch1:		foobillard-3.0-really-disable-nvidia.patch
 License:	GPL
 Group:		Games/Sports
 URL:		http://foobillard.sunsite.dk/
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildRequires:	mesaglu-devel mesa-common-devel png-devel zlib-devel libxaw-devel freetype2-devel
 
 %description
