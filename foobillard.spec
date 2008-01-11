@@ -44,16 +44,6 @@ A free OpenGl billard game for linux.
 %{makeinstall_std}
 %{__install} -m644 %{name}.6 -D $RPM_BUILD_ROOT%{_mandir}/man6/%{name}.6
 
-%{__install} -d $RPM_BUILD_ROOT%{_menudir}
-%{__cat} <<EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}):command="%{_gamesbindir}/%{name}" \
-		icon=%{name}.png \
-		needs="x11" \
-		section="More Applications/Games/Sports" \
-		title="FooBillard" \
-		longtitle="%{Summary}" \
-		xdg="true"
-EOF
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -89,7 +79,6 @@ EOF
 %{_miconsdir}/%{name}.png
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
-%{_menudir}/%{name}
 %defattr(755,root,root,755)
 %{_gamesbindir}/%{name}
 
