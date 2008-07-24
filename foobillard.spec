@@ -3,7 +3,7 @@
 #
 %define	name	foobillard
 %define	version	3.0a
-%define	release	%mkrel 4
+%define	release	%mkrel 6
 %define	Summary	OpenGL billard game
 
 Summary:	%{Summary}
