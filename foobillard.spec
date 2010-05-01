@@ -51,12 +51,12 @@ mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
 [Desktop Entry]
 Name=FooBillard
-Comment=%{Summary}
+Comment=%{summary}
 Exec=padsp %{_gamesbindir}/%{name}
 Icon=%{name}
 Terminal=false
 Type=Application
-Categories=X-MandrivaLinux-MoreApplications-Games-Sports;Game;SportsGame;
+Categories=Game;SportsGame;
 EOF
 
 %{__install} -m644 %{SOURCE11} -D %{buildroot}%{_miconsdir}/%{name}.png
