@@ -86,3 +86,64 @@ EOF
 %{_iconsdir}/%{name}.png
 %{_liconsdir}/%{name}.png
 %{_gamesbindir}/%{name}
+
+
+%changelog
+* Sun Dec 05 2010 Oden Eriksson <oeriksson@mandriva.com> 3.0a-8mdv2011.0
++ Revision: 610740
+- rebuild
+
+* Sat May 01 2010 Funda Wang <fwang@mandriva.org> 3.0a-7mdv2010.1
++ Revision: 541466
+- fix desktop file
+
+* Sun Aug 30 2009 Tomasz Pawel Gajc <tpg@mandriva.org> 3.0a-7mdv2010.0
++ Revision: 422648
+- execute foobillard with psdsp, to get sound back (mdvbz #52483)
+- spec file clean
+
+* Thu Jul 24 2008 Thierry Vignaud <tv@mandriva.org> 3.0a-6mdv2009.0
++ Revision: 245302
+- rebuild
+- drop old menu
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+* Fri Dec 21 2007 Olivier Blin <oblin@mandriva.com> 3.0a-4mdv2008.1
++ Revision: 136417
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - kill desktop-file-validate's 'warning: key "Encoding" in group "Desktop Entry" is deprecated'
+
+
+* Sat Dec 02 2006 Olivier Blin <oblin@mandriva.com> 3.0a-4mdv2007.0
++ Revision: 89977
+- buildrequire freetype2-devel
+
+  + Emmanuel Andry <eandry@mandriva.org>
+    - xdg menu
+      fix buildrequires
+    - Import foobillard
+
+* Tue Dec 27 2005 Lenny Cartier <lenny@mandriva.com> 3.0a-3mdk
+- rebuild
+
+* Fri Aug 27 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 3.0a-2mdk
+- rebuild for new menu
+- drop packager tag
+
+* Fri Jul 30 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 3.0a-1mdk
+- 3.0a
+- drop P0 (merged upstream)
+
+* Sat Apr 24 2004 Per Øyvind Karlsen <peroyvind@linux-mandrake.com> 3.0-1mdk
+- 3.0
+- really disable nvidia (P1)
+- fix problem with foobillard not changing to datadir before running (P2)
+- add menu item with icons
+- install man page
+- fix buildrequires (lib64..)
+
