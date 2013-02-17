@@ -4,7 +4,7 @@
 Summary:	OpenGL billard game
 Name:		foobillard
 Version:	3.0a
-Release:	%mkrel 8
+Release:	9
 License:	GPLv2+
 Group:		Games/Sports
 URL:		http://foobillard.sunsite.dk/
@@ -20,7 +20,7 @@ BuildRequires:	mesa-common-devel
 BuildRequires:	png-devel
 BuildRequires:	zlib-devel
 BuildRequires:	libxaw-devel
-BuildRequires:	freetype2-devel
+BuildRequires:	pkgconfig(freetype2)
 Requires:	pulseaudio-utils
 BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 
