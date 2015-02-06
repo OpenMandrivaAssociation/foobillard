@@ -4,7 +4,7 @@
 Summary:	OpenGL billard game
 Name:		foobillard
 Version:	3.0a
-Release:	9
+Release:	10
 License:	GPLv2+
 Group:		Games/Sports
 URL:		http://foobillard.sunsite.dk/
