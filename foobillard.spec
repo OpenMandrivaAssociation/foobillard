@@ -7,7 +7,7 @@ Version:	3.0a
 Release:	11
 License:	GPLv2+
 Group:		Games/Sports
-URL:		http://foobillard.sunsite.dk/
+URL:		https://foobillard.sunsite.dk/
 Source0:	http://foobillard.sunsite.dk/dnl/%{name}-%{version}.tar.bz2
 Source11:	%{name}-16x16.png
 Source12:	%{name}-32x32.png
