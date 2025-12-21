@@ -15,6 +15,11 @@ Source13:	%{name}-48x48.png
 #Patch0:	%{name}-2.7-no_nv_fresnel.patch.bz2
 Patch1:		foobillard-3.0-really-disable-nvidia.patch
 #Patch2:	foobillard-3.0-fix-chdir.patch.bz2
+BuildRequires:	autoconf
+BuildRequires:	automake
+BuildRequires:	libtool-base
+BuildRequires:	slibtool
+BuildRequires:	make
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	mesa-common-devel
 BuildRequires:	png-devel
